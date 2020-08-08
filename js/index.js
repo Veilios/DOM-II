@@ -12,13 +12,21 @@ logoImg.forEach((e) => {
 
 const navBar = document.querySelectorAll('.nav-link');
 navBar.forEach((e) => {
-    e.addEventListener('mouseenter', () => {
+    e.addEventListener('mouseover', () => {
         e.style.transform = "scale(1.2)";
         e.style.transition = "tranform 2s";
         e.style.color = "blueviolet";
     });
-    e.addEventListener('mouseleave', () => {
+    e.addEventListener('mouseout', () => {
         e.style.transform = "scale(1)";
         e.style.color = "black";
     });
 });
+
+
+const allH = document.querySelectorAll('h2');
+allH.forEach((e) => {
+    e.addEventListener('auxclick', () => {
+        e.style.color = "orange";
+    })
+})

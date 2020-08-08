@@ -24,9 +24,14 @@ navBar.forEach((e) => {
 });
 
 
-const allH = document.querySelectorAll('h2');
-allH.forEach((e) => {
+const allH2 = document.querySelectorAll('h2');
+allH2.forEach((e) => {
     e.addEventListener('auxclick', () => {
         e.style.color = "orange";
-    })
+    });
+});
+
+const mainH = document.querySelector('h1');
+mainH.addEventListener('dblclick', () => {
+    mainH.style.color = "red";
 })

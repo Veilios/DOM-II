@@ -1,12 +1,12 @@
 // Your code goes here
-const logoImgContainer = document.querySelector('.intro');
-logoImgContainer.style.overflow = "hidden";
-const logoImg = document.querySelector('.intro img');
-logoImg.addEventListener('mouseenter', () => {
-    logoImg.style.transform = "scale(1.2)";
-    logoImg.style.transition = "transform 1s";
-});
-logoImg.addEventListener('mouseleave', () => {
-    logoImg.style.transform = "scale(1)";
-});
-
+const logoImg = document.querySelectorAll('img');
+logoImg.forEach((e) => {
+    e.addEventListener('mouseenter', () => {
+        e.style.transform = "scale(1.2)";
+        e.style.transition = "transform 1s";
+    });
+    e.addEventListener('mouseleave', () => {
+        e.style.transform = "scale(1)";
+    });
+    
+})

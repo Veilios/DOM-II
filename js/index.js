@@ -62,5 +62,12 @@ keys.addEventListener('keydown', () => {
 });
 
 window.addEventListener('load', () => {
-    console.log('Page was loaded successfully')
-})
+    console.log('Page was loaded successfully');
+});
+
+const trans = document.querySelectorAll("img, a");
+trans.forEach((e) => {
+    e.addEventListener("transitionstart", () => {
+        console.log("Transition Started!")
+    });
+});

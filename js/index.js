@@ -60,3 +60,7 @@ keys.addEventListener('keydown', () => {
         alert("Hello "+ person + "! How are you today?");
     };
 });
+
+window.addEventListener('load', () => {
+    console.log('Page was loaded successfully')
+})

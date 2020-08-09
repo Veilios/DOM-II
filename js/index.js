@@ -34,4 +34,19 @@ allH2.forEach((e) => {
 const mainH = document.querySelector('h1');
 mainH.addEventListener('dblclick', () => {
     mainH.style.color = "red";
-})
+    mainH.style.transform = "scale(1.2)";
+});
+
+const allP = document.querySelectorAll('p');
+allP.forEach((e) => {
+    e.addEventListener('select', () => {
+        e.style.fontWeight = "bold";
+    });
+});
+
+const drag = document.querySelectorAll('img, a');
+drag.forEach((e) => {
+    e.addEventListener('drag', () => {
+        alert("That doesn't do anything!");
+    });
+});

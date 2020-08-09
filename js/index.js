@@ -50,3 +50,13 @@ drag.forEach((e) => {
         alert("That doesn't do anything!");
     });
 });
+
+const keys = document.querySelector('body');
+keys.addEventListener('keydown', () => {
+    var person =prompt("Please Enter Your Name", "");
+    if(person == null || person == "") {
+        alert("Greeting canceled.");
+    } else {
+        alert("Hello "+ person + "! How are you today?");
+    };
+});

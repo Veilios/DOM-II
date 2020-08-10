@@ -12,6 +12,9 @@ logoImg.forEach((e) => {
 
 const navBar = document.querySelectorAll('.nav-link');
 navBar.forEach((e) => {
+    e.addEventListener("click", (a) => {
+        a.preventDefault();
+    })
     e.addEventListener('mouseover', () => {
         e.style.transform = "scale(1.2)";
         e.style.transition = "tranform 2s";

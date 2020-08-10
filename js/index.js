@@ -80,8 +80,9 @@ click1.addEventListener("click", (e) => {
 });
 
 
-let click2 = document.querySelector("body");
+let click2 = document.querySelector(".home");
 click2.addEventListener("click", (e) => {
     alert("There isn't a picture here.");
     e.stopPropagation();
 });
+

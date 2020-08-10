@@ -71,3 +71,17 @@ trans.forEach((e) => {
         console.log("Transition Started!")
     });
 });
+
+
+let click1 = document.querySelector('.intro img');
+click1.addEventListener("click", (e) => {
+    alert("This picture is awesome.");
+    e.stopPropagation();
+});
+
+
+let click2 = document.querySelector("body");
+click2.addEventListener("click", (e) => {
+    alert("There isn't a picture here.");
+    e.stopPropagation();
+});

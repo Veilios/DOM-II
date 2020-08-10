@@ -76,11 +76,13 @@ trans.forEach((e) => {
 });
 
 
-let click1 = document.querySelector('.intro img');
-click1.addEventListener("click", (e) => {
-    alert("This picture is awesome.");
-    e.stopPropagation();
-});
+let click1 = document.querySelectorAll('img');
+click1.forEach((e) => {
+    e.addEventListener("click", (a) => {
+        alert("This picture is awesome!")
+        a.stopPropagation();
+    })
+})
 
 
 let click2 = document.querySelector(".home");
